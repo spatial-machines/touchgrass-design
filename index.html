@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>touchgrass.design</title>
+  <meta name="description" content="Maps, automation, and tools that belong to the people who use them.">
+  <meta property="og:title" content="touchgrass.design">
+  <meta property="og:description" content="Maps and automation.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+    :root {
+      --bg: #fafaf7;
+      --fg: #1a1a1a;
+      --muted: #6b6b6b;
+      --link: #0055aa;
+      --code-bg: #f0f0ea;
+      --border: #e5e5df;
+      --input-bg: #ffffff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f0f0e;
+        --fg: #e8e8e3;
+        --muted: #8a8a85;
+        --link: #6ab0ff;
+        --code-bg: #1a1a18;
+        --border: #2a2a28;
+        --input-bg: #17171a;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 64px 24px 120px;
+    }
+    nav {
+      font-size: 0.92rem;
+      color: var(--muted);
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 56px;
+    }
+    nav a { color: var(--muted); border-bottom: none; }
+    nav a:hover { color: var(--fg); }
+    h1 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin: 0 0 6px;
+      letter-spacing: -0.01em;
+    }
+    h1 .logo {
+      display: inline-block;
+      vertical-align: -4px;
+      margin-right: 10px;
+      width: 20px;
+      height: 20px;
+    }
+    .tagline {
+      color: var(--muted);
+      font-size: 1rem;
+      margin: 0 0 44px;
+    }
+    h2 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin: 44px 0 14px;
+      letter-spacing: -0.01em;
+    }
+    p { margin: 0 0 14px; }
+    a {
+      color: var(--link);
+      text-decoration: none;
+      border-bottom: 1px solid currentColor;
+    }
+    a:hover { opacity: 0.7; }
+    code {
+      font-family: "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+      font-size: 0.9rem;
+      background: var(--code-bg);
+      padding: 1px 5px;
+      border-radius: 3px;
+    }
+    .project {
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 16px 18px;
+      margin: 0 0 14px;
+    }
+    .project .project-title {
+      font-weight: 600;
+      margin: 0 0 4px;
+    }
+    .project .project-desc {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin: 0 0 8px;
+    }
+    .project .project-link {
+      font-size: 0.9rem;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin: 0 0 14px;
+    }
+    label {
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
+    input[type="email"], input[type="text"], textarea {
+      background: var(--input-bg);
+      color: var(--fg);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 10px 12px;
+      font-family: inherit;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      width: 100%;
+    }
+    textarea { resize: vertical; min-height: 100px; }
+    input:focus, textarea:focus {
+      outline: none;
+      border-color: var(--link);
+    }
+    button {
+      background: var(--fg);
+      color: var(--bg);
+      border: none;
+      border-radius: 4px;
+      padding: 10px 18px;
+      font-family: inherit;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      align-self: flex-start;
+    }
+    button:hover { opacity: 0.85; }
+    .muted { color: var(--muted); }
+    .small { font-size: 0.88rem; }
+    footer {
+      margin-top: 72px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    footer a { color: var(--muted); border-bottom-color: var(--border); }
+    footer a:hover { color: var(--fg); }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="#projects">projects</a>
+  <a href="#about">about</a>
+  <a href="#contact">contact</a>
+</nav>
+
+<h1><svg class="logo" viewBox="0 0 24 24" role="img" aria-label="touchgrass.design logo"><rect x="0" y="0" width="7" height="7" fill="currentColor" opacity="0.55"/><rect x="8.5" y="0" width="7" height="7" fill="currentColor" opacity="0.75"/><rect x="17" y="0" width="7" height="7" fill="currentColor" opacity="1"/><rect x="0" y="8.5" width="7" height="7" fill="currentColor" opacity="0.35"/><rect x="8.5" y="8.5" width="7" height="7" fill="currentColor" opacity="0.55"/><rect x="17" y="8.5" width="7" height="7" fill="currentColor" opacity="0.75"/><rect x="0" y="17" width="7" height="7" fill="currentColor" opacity="0.2"/><rect x="8.5" y="17" width="7" height="7" fill="currentColor" opacity="0.35"/><rect x="17" y="17" width="7" height="7" fill="currentColor" opacity="0.55"/></svg>touchgrass.design</h1>
+<p class="tagline">Maps and automation.</p>
+
+<h2 id="projects">Projects</h2>
+
+<div class="project">
+  <p class="project-title">Spatial Machines</p>
+  <p class="project-desc">A multi-agent GIS consulting firm that runs on your laptop. Nine specialist agents, 134 pages of encoded methodology, 155 production scripts. You type a spatial question; they hand back styled maps, an interactive web map, an HTML report, and a QGIS project. Open source, Apache-2.0.</p>
+  <p class="project-link"><a href="https://spatial-machines.touchgrass.design">spatial-machines.touchgrass.design</a> &middot; <a href="https://github.com/spatial-machines/v0">github</a></p>
+</div>
+
+<p class="muted small">More projects land here as they happen.</p>
+
+<h2 id="about">About me</h2>
+<p>I'm a cartographer. I make maps, and I think it matters that spatial information gets made and shared in ways the people affected by it can actually inspect.</p>
+<p>I like cats. I need to spend more time outside.</p>
+
+<h2>Why touchgrass</h2>
+<p>You already know why. It's the thing people say to someone who spends too much time at a computer. I'm a cartographer who writes code about cartography; I am that person. Also the domain was available.</p>
+
+<h2>Why I build things this way</h2>
+<p>I want to make my life easier by automating the things I do and owning them end to end. Every project here starts from that idea. The tools should work for the person using them. The data should belong to whoever collected it. The output should survive the platform that produced it.</p>
+<p>If that means shipping open source when a SaaS would pay better, fine. The point is the work, not the wrapper around it.</p>
+
+<h2 id="contact">Contact</h2>
+<p>If you've built something with one of these projects, found a bug, or want to say hello, the form below sends to me directly.</p>
+
+<form action="https://formspree.io/f/REPLACE_WITH_FORM_ID" method="POST">
+  <label for="name">Your name</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="email">Your email</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="message">Message</label>
+  <textarea id="message" name="message" required></textarea>
+
+  <button type="submit">Send</button>
+</form>
+
+<p class="muted small">Or email <a href="mailto:contact@touchgrass.design">contact@touchgrass.design</a> directly.</p>
+
+<footer>
+  Projects published here are individually licensed; see each repo.
+</footer>
+
+</body>
+</html>
