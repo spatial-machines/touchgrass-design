@@ -10,11 +10,12 @@
 
 ## Add Photographs
 
-1. Copy exported JPEGs into a trip folder like `/photos/sturgis-2026/` or `/photos/sturgis-2026/source/`.
-2. Generate web images at reasonable sizes before publishing.
-3. Put public optimized files in `/photos/sturgis-2026/web/`.
-4. Add curated portfolio images to `/content/photos.json`.
-5. Reference the image from the relevant trip page.
+1. Create a folder for the collection, for example `/photos/omaha-walks/`.
+2. Put original edited exports in `/photos/omaha-walks/source/`.
+3. Generate optimized web images into `/photos/omaha-walks/web/`.
+4. Add thumbnails into `/photos/omaha-walks/web/thumbs/` if needed.
+5. Add curated portfolio images to `/content/photos.json`.
+6. Reference the images from a trip, photography, or journal page.
 
 Suggested output sizes:
 
@@ -26,6 +27,21 @@ thumb: 480px wide
 ```
 
 Use WebP when available, but keep JPEG fallbacks for compatibility.
+
+For an Omaha walking set of about 20 images, use:
+
+```text
+photos/
+  omaha-walks/
+    source/
+      DSC01234.jpg
+    web/
+      DSC01234.jpg
+      thumbs/
+        DSC01234.jpg
+```
+
+If it is a true trip/project, create `/trips/omaha-walks/`. If it is more of a portfolio collection, keep it on `/photography/` and tag each item in `/content/photos.json` with `"category": "omaha"` and `"trip": null`.
 
 ## Add A Journal Post
 
