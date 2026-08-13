@@ -1,2 +1,4 @@
 /photos/sturgis-2026/*.jpg
 /photos/sturgis-2026/_contact-sheet.jpg
+/photos/*/source/*
+!/photos/*/source/.gitkeep
