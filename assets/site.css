@@ -311,17 +311,16 @@ a:hover {
 }
 
 .portfolio-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 12px;
+  column-count: 4;
+  column-gap: 14px;
 }
 
 .portfolio-item {
-  margin: 0;
-}
-
-.portfolio-item .photo-placeholder.has-image {
-  height: 100%;
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 18px;
+  break-inside: avoid;
+  page-break-inside: avoid;
 }
 
 .portfolio-item figcaption {
@@ -404,6 +403,12 @@ a:hover {
   font-size: 0.78rem;
 }
 
+@media (max-width: 1050px) {
+  .portfolio-grid {
+    column-count: 3;
+  }
+}
+
 @media (max-width: 780px) {
   .site-header {
     position: static;
@@ -443,9 +448,12 @@ a:hover {
   }
 
   .photo-strip,
-  .portfolio-grid,
   .photo-frame.pair {
     grid-template-columns: 1fr;
+  }
+
+  .portfolio-grid {
+    column-count: 1;
   }
 
   .photo-frame.pair .photo-placeholder.has-image {
