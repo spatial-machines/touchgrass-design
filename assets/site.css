@@ -41,9 +41,9 @@ img {
 
 .photo-img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  background: #252a25;
+  height: auto;
+  object-fit: contain;
+  background: var(--white);
 }
 
 a {
@@ -126,7 +126,7 @@ a:hover {
   font-family: var(--serif);
   font-size: clamp(4rem, 12vw, 10rem);
   font-weight: 500;
-  line-height: 0.82;
+  line-height: 0.98;
   letter-spacing: 0;
 }
 
@@ -163,8 +163,11 @@ a:hover {
 
 .hero-card.has-image,
 .photo-placeholder.has-image {
-  padding: 0;
-  background: #252a25;
+  display: block;
+  align-content: initial;
+  padding: clamp(14px, 2.2vw, 28px);
+  background: var(--white);
+  aspect-ratio: auto;
 }
 
 .hero-card.has-image::before,
@@ -314,7 +317,7 @@ a:hover {
 }
 
 .photo-frame.wide .photo-placeholder {
-  aspect-ratio: 16 / 9;
+  aspect-ratio: auto;
 }
 
 .photo-frame.portrait {
