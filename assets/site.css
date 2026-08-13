@@ -330,6 +330,24 @@ a:hover {
   gap: 14px;
 }
 
+.photo-frame.pair .photo-placeholder.has-image {
+  min-height: clamp(360px, 52vw, 680px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo-frame.pair .photo-img {
+  width: auto;
+  max-width: 100%;
+  max-height: clamp(330px, 48vw, 620px);
+  margin: auto;
+}
+
+.photo-frame.pair figcaption {
+  grid-column: 1 / -1;
+}
+
 .photo-frame figcaption {
   margin-top: 10px;
   color: var(--muted);
@@ -389,6 +407,15 @@ a:hover {
   .photo-strip,
   .photo-frame.pair {
     grid-template-columns: 1fr;
+  }
+
+  .photo-frame.pair .photo-placeholder.has-image {
+    min-height: 0;
+  }
+
+  .photo-frame.pair .photo-img {
+    width: 100%;
+    max-height: none;
   }
 }
 
