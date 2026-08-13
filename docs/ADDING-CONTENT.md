@@ -14,8 +14,8 @@
 2. Put original edited exports in `/photos/omaha-walks/source/`.
 3. Generate optimized web images into `/photos/omaha-walks/web/`.
 4. Add thumbnails into `/photos/omaha-walks/web/thumbs/` if needed.
-5. Add curated portfolio images to `/content/photos.json`.
-6. Reference the images from a trip, photography, or journal page.
+5. Add curated portfolio images to `/content/portfolio.json`.
+6. Reference the images from a trip or photography page.
 
 Suggested output sizes:
 
@@ -47,7 +47,7 @@ photos/
         DSC01234.jpg
 ```
 
-If it is a true trip/project, create `/trips/omaha-walks/`. If it is more of a portfolio collection, keep it on `/photography/` and tag each item in `/content/photos.json` with `"category": "omaha"` and `"trip": null`.
+If it is a true trip/project, create `/trips/omaha-walks/`. If it is more of a portfolio collection, keep it on `/photography/` and tag each item in `/content/portfolio.json`.
 
 The current Omaha collection is `/trips/walking-around/` because it is ongoing.
 
@@ -57,15 +57,6 @@ The current Omaha collection is `/trips/walking-around/` because it is ongoing.
 2. Reorder the file paths inside each section.
 3. Mirror important order changes in `/photography/index.html`.
 4. Keep the portfolio selective. Collection pages can show more images than the portfolio.
-
-## Add A Journal Post
-
-1. Create `/journal/post-slug/index.html`.
-2. Copy `/journal/field-notes-start/index.html`.
-3. Update title, metadata, and body.
-4. Add an entry to `/content/journal.json`.
-5. Add the post to `/journal/index.html`.
-6. Update `/rss.xml` and `/sitemap.xml`.
 
 ## Rollback
 
