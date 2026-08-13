@@ -10,9 +10,9 @@
 
 ## Add Photographs
 
-1. Copy exported JPEGs into a folder like `/photos/sturgis-2026/source/`.
+1. Copy exported JPEGs into a trip folder like `/photos/sturgis-2026/` or `/photos/sturgis-2026/source/`.
 2. Generate web images at reasonable sizes before publishing.
-3. Put public files in `/photos/sturgis-2026/`.
+3. Put public optimized files in `/photos/sturgis-2026/web/`.
 4. Add curated portfolio images to `/content/photos.json`.
 5. Reference the image from the relevant trip page.
 
