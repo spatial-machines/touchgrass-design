@@ -11,5 +11,18 @@
     "video": null,
     "related_posts": ["field-notes-start"],
     "coordinates": null
+  },
+  {
+    "title": "Walking around",
+    "slug": "walking-around",
+    "date_range": "Ongoing",
+    "location": "Omaha",
+    "description": "Ongoing Omaha photo collection from walks around the city.",
+    "hero_image": "/photos/omaha-walks/web/DSC09999.jpg",
+    "gallery": "/photos/omaha-walks/web/",
+    "route_map": null,
+    "video": null,
+    "related_posts": [],
+    "coordinates": null
   }
 ]

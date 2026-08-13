@@ -28,6 +28,12 @@ thumb: 480px wide
 
 Use WebP when available, but keep JPEG fallbacks for compatibility.
 
+The optimizer script creates fresh resized JPEGs and does not copy EXIF metadata, including GPS/location fields:
+
+```powershell
+.\tools\optimize-images.ps1 -Source "photos\omaha-walks\source" -Destination "photos\omaha-walks\web"
+```
+
 For an Omaha walking set of about 20 images, use:
 
 ```text
@@ -42,6 +48,15 @@ photos/
 ```
 
 If it is a true trip/project, create `/trips/omaha-walks/`. If it is more of a portfolio collection, keep it on `/photography/` and tag each item in `/content/photos.json` with `"category": "omaha"` and `"trip": null`.
+
+The current Omaha collection is `/trips/walking-around/` because it is ongoing.
+
+## Edit Portfolio Order
+
+1. Open `/content/portfolio.json`.
+2. Reorder the file paths inside each section.
+3. Mirror important order changes in `/photography/index.html`.
+4. Keep the portfolio selective. Collection pages can show more images than the portfolio.
 
 ## Add A Journal Post
 

@@ -310,6 +310,27 @@ a:hover {
   min-height: 310px;
 }
 
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.portfolio-item {
+  margin: 0;
+}
+
+.portfolio-item .photo-placeholder.has-image {
+  height: 100%;
+}
+
+.portfolio-item figcaption {
+  margin-top: 7px;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.72rem;
+}
+
 .essay-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.25fr) minmax(220px, 0.65fr);
@@ -422,6 +443,7 @@ a:hover {
   }
 
   .photo-strip,
+  .portfolio-grid,
   .photo-frame.pair {
     grid-template-columns: 1fr;
   }
