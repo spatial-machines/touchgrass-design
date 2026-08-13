@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Touchgrass Journal</title>
+    <link>https://touchgrass.design/journal/</link>
+    <description>Field notes, essays, trip reports, photography notes, film notes, maps, and experiments.</description>
+    <item>
+      <title>Field Notes Start Here</title>
+      <link>https://touchgrass.design/journal/field-notes-start/</link>
+      <guid>https://touchgrass.design/journal/field-notes-start/</guid>
+      <pubDate>Thu, 13 Aug 2026 00:00:00 -0500</pubDate>
+      <description>A starter post for the Touchgrass journal system.</description>
+    </item>
+  </channel>
+</rss>

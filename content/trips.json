@@ -1,0 +1,15 @@
+[
+  {
+    "title": "Sturgis + The Black Hills",
+    "slug": "sturgis-2026",
+    "date_range": "August 2026",
+    "location": "South Dakota",
+    "description": "Motorcycle trip photo essay for Sturgis and the Black Hills.",
+    "hero_image": "/photos/sturgis-2026/hero.jpg",
+    "gallery": "/photos/sturgis-2026/",
+    "route_map": null,
+    "video": null,
+    "related_posts": ["field-notes-start"],
+    "coordinates": null
+  }
+]

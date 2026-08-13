@@ -1,0 +1,18 @@
+[
+  {
+    "file": "/photos/sturgis-2026/hero.jpg",
+    "title": "Sturgis + The Black Hills Hero",
+    "alt": "Placeholder for the opening Sturgis and Black Hills trip photograph.",
+    "caption": "Replace with the strongest opening frame from the trip.",
+    "date": "2026-08",
+    "location": "South Dakota",
+    "category": "trip",
+    "trip": "sturgis-2026",
+    "orientation": "landscape",
+    "featured": true,
+    "print_available": false,
+    "print_url": null,
+    "book_featured": false,
+    "licensing_available": false
+  }
+]
