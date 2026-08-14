@@ -1,0 +1,28 @@
+[
+  {
+    "title": "Sturgis + The Black Hills",
+    "slug": "sturgis-2026",
+    "date_range": "August 2026",
+    "location": "South Dakota",
+    "description": "Motorcycle trip photo essay for Sturgis and the Black Hills.",
+    "hero_image": "/photos/sturgis-2026/web/DSC01063.jpg",
+    "gallery": "/photos/sturgis-2026/web/",
+    "route_map": null,
+    "video": null,
+    "related_posts": ["field-notes-start"],
+    "coordinates": null
+  },
+  {
+    "title": "Walking around",
+    "slug": "walking-around",
+    "date_range": "Ongoing",
+    "location": "Omaha",
+    "description": "Ongoing Omaha photo collection from walks around the city.",
+    "hero_image": "/photos/omaha-walks/web/DSC09999.jpg",
+    "gallery": "/photos/omaha-walks/web/",
+    "route_map": null,
+    "video": null,
+    "related_posts": [],
+    "coordinates": null
+  }
+]

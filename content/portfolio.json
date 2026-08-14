@@ -1,0 +1,25 @@
+{
+  "notes": "Ordered source of truth for the Photography page. Move filenames up or down here first, then mirror changes in photography/index.html until the site has a generator.",
+  "sections": [
+    {
+      "title": "Photography",
+      "slug": "photography",
+      "photos": [
+        "/photos/omaha-walks/web/DSC00045.jpg",
+        "/photos/omaha-walks/web/DSC00267.jpg",
+        "/photos/omaha-walks/web/DSC00525.jpg",
+        "/photos/omaha-walks/web/DSC00561.jpg",
+        "/photos/omaha-walks/web/DSC00617.jpg",
+        "/photos/omaha-walks/web/DSC00110.jpg",
+        "/photos/omaha-walks/web/DSC09621.jpg",
+        "/photos/omaha-walks/web/DSC00551.jpg",
+        "/photos/omaha-walks/web/DSC00335.jpg",
+        "/photos/sturgis-2026/web/DSC00973.jpg",
+        "/photos/sturgis-2026/web/DSC01054.jpg",
+        "/photos/sturgis-2026/web/DSC00901.jpg",
+        "/photos/sturgis-2026/web/DSC00983.jpg",
+        "/photos/sturgis-2026/web/DSC01060.jpg"
+      ]
+    }
+  ]
+}
