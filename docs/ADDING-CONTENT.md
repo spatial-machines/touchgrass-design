@@ -1,5 +1,26 @@
 # Adding Content
 
+This site is static. Most launch-night edits are plain HTML plus a couple of JSON manifests.
+
+## Edit Text
+
+1. Home page text: edit `/index.html`.
+2. Trip list cards: edit `/trips/index.html`.
+3. Sturgis page text and captions: edit `/trips/sturgis-2026/index.html`.
+4. Omaha walking page text and captions: edit `/trips/walking-around/index.html`.
+5. Photography page headings and visible portfolio items: edit `/photography/index.html`.
+6. Spatial Machines copy: edit `/spatial-machines/index.html`.
+
+For page metadata, update the `<title>`, `<meta name="description">`, Open Graph tags, and canonical URL in the same HTML file.
+
+## Reorder Photos
+
+1. Open `/content/portfolio.json`.
+2. Move photo paths up or down inside the relevant `photos` array.
+3. Mirror the visible order in `/photography/index.html` by moving the matching `<figure class="portfolio-item">...</figure>` blocks.
+4. For trip pages, reorder the `<figure class="photo-frame ...">...</figure>` blocks inside that trip page.
+5. Keep captions with their matching image when moving blocks.
+
 ## Add A Trip
 
 1. Create a folder under `/trips/your-trip-slug/`.
@@ -11,11 +32,17 @@
 ## Add Photographs
 
 1. Create a folder for the collection, for example `/photos/omaha-walks/`.
-2. Put original edited exports in `/photos/omaha-walks/source/`.
-3. Generate optimized web images into `/photos/omaha-walks/web/`.
-4. Add thumbnails into `/photos/omaha-walks/web/thumbs/` if needed.
+2. Put original edited JPEG exports in `/photos/omaha-walks/source/`.
+3. Run the optimizer from the repo root:
+
+```powershell
+.\tools\optimize-images.ps1 -Source "photos\omaha-walks\source" -Destination "photos\omaha-walks\web"
+```
+
+4. The optimized public images will be written to `/photos/omaha-walks/web/`, with thumbnails in `/photos/omaha-walks/web/thumbs/`.
 5. Add curated portfolio images to `/content/portfolio.json`.
-6. Reference the images from a trip or photography page.
+6. Add matching `<img>` or `<figure>` blocks to `/photography/index.html` or the relevant trip page.
+7. Write useful `alt` text that describes what is actually visible in the image.
 
 Suggested output sizes:
 
@@ -26,9 +53,7 @@ medium: 1100px wide
 thumb: 480px wide
 ```
 
-Use WebP when available, but keep JPEG fallbacks for compatibility.
-
-The optimizer script creates fresh resized JPEGs and does not copy EXIF metadata, including GPS/location fields:
+The optimizer script creates fresh resized JPEGs and does not copy EXIF metadata, including GPS/location fields.
 
 ```powershell
 .\tools\optimize-images.ps1 -Source "photos\omaha-walks\source" -Destination "photos\omaha-walks\web"
